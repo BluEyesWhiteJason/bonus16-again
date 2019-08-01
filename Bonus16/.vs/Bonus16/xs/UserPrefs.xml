@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{22529691-8D92-4C9B-B941-E2B3645C8683}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Bonus16/CarApp.cs">
+    <Files>
+      <File FileName="Bonus16/Program.cs" Line="10" Column="21" />
+      <File FileName="Bonus16/Car.cs" Line="15" Column="46" />
+      <File FileName="Bonus16/CarApp.cs" Line="22" Column="10" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Bonus16" expanded="True">
+            <Node name="Bonus16" expanded="True">
+              <Node name="CarApp.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Bonus16 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
