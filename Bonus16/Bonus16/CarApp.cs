@@ -4,32 +4,52 @@ namespace Bonus16
 {
     public class CarApp
     {
-        //string make;
-        //string model;
-        //int year;
-        //double price;
 
+        List<Car> carsList = new List<Car>();
 
-        public CarApp()
+        public CarApp(List<Car> Cars)
         {
-            List<Car> cars = new List<Car>();
+           
+        }
 
-            Console.WriteLine("Hello, welcome to CarApp!");
-            Console.WriteLine("Please enter the following information");
-            Console.Write("Make: ");
+        public void SetMake()
+        {
+            Console.WriteLine("Make: ");
             string make = Console.ReadLine();
+        }
 
+        public void SetModel()
+        {
             Console.Write("Model: ");
             string model = Console.ReadLine();
+        }
 
+        public void SetYear()
+        {
 
             Console.Write("Year: ");
             int year = int.Parse(Console.ReadLine());
+        }
+
+        public void SetPrice()
+        {
 
             Console.Write("Price: ");
             double price = Convert.ToDouble(Console.ReadLine());
-
         }
+       
+
+
+
+        //private static void CarAppl(List<Car> cars)
+        //{
+        //    foreach (Car c in cars)
+        //    {
+        //        Console.WriteLine(c);
+        //    }
+        //}
+
+
 
         //public CarApp(string Make, string Model, int Year, double Price)
         //{

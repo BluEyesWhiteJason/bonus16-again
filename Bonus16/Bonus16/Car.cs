@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 
 namespace Bonus16
 {
-    class Car
+    public class Car
     {
         // Variables
         string make;
@@ -19,7 +20,7 @@ namespace Bonus16
             model = "Accord";
             year = 1986;
             price = 500.00;
-        }
+        }   
 
         public Car(string Make, string Model, int Year, double Price)
         {
@@ -31,10 +32,7 @@ namespace Bonus16
 
         public override string ToString()
         {
-            Console.WriteLine("Make: " + make);
-            Console.WriteLine("Model: " + model);
-            Console.WriteLine("Year: " + year);
-            Console.WriteLine("Price: " + price);
+            Console.WriteLine(make + "\t" + model + "\t\t" + year + "\t" + price.ToString("C", CultureInfo.CurrentCulture));
             return "";
         }
     }
