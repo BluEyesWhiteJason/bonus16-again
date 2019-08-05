@@ -38,20 +38,14 @@ namespace Bonus16
                 Console.Write($"Enter Car #{i + 1} Model: ");
                 string model = myTI.ToTitleCase(Console.ReadLine());
 
-                int year = 0;
+                //Input validation for year
+                int year;
                 Console.Write($"Enter Car #{i + 1} Year: ");
-                //while (true)
-                //{
-                //    try
-                //    {
-                year = int.Parse(Console.ReadLine());
-                //        break;
-                //    }
-                //    catch (FormatException e)
-                //    {
-                //        Console.WriteLine("Please enter a number");
-                //    }
-                //}
+             
+                while (!int.TryParse(Console.ReadLine(), out year))
+                {
+                    Console.Write($"Input Invalid, enter car #{i + 1} Year: ");
+                }
 
                 double price = 0;
                 Console.Write($"Enter Car #{i + 1} Price: ");
@@ -71,6 +65,7 @@ namespace Bonus16
                 cars.Add(new Car(make, model, year, price));
             }
             cars.Add(used);
+            Console.Clear();
 
             // Loop showing the list and looking until user says quit
             bool onward = true;
@@ -101,7 +96,7 @@ namespace Bonus16
                             Console.WriteLine("Goobye!");
                             System.Environment.Exit(1); //From stackoverflow
                         }
-
+                        Console.Clear();
                         Console.WriteLine(cars[sel - 1].ToString());
                         break;
 
@@ -117,6 +112,7 @@ namespace Bonus16
                     }
 
                 }
+                
 
                 // Section asking for purchasing
                 Console.WriteLine("Would you like to purchase this vehicle? (y/n)");
@@ -139,6 +135,8 @@ namespace Bonus16
                     Console.WriteLine("Okay");
                     Thread.Sleep(2000);
                 }
+
+                Console.Clear();
             }
         }
 
